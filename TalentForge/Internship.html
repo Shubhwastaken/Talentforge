@@ -1,0 +1,908 @@
+<html lang="en">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Michroma&display=swap" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap');
+
+        @import url('https://fonts.googleapis.com/css2?family=Michroma&display=swap');
+    </style>
+
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1440", initial-scale="1.0">
+    <title> TalentForge</title>
+    <style>
+        body {
+    background-color: rgba(11, 11, 11, 0.95);
+    margin: 0; /* Ensures no default margin */
+    padding: 0; /* Ensures no default padding */
+}
+
+.com-name h2 {
+   margin: 0px;
+   
+
+}
+       
+
+        .block {
+            /* border: 2px ; */
+            /* display: inline-block; */
+            /* margin: 10px;
+            padding: 1px; */
+            word-spacing: 1px;
+
+            text-align: center;
+
+
+            font-family: "Michroma", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+
+
+
+
+            font-size: 9px;
+
+            /* border-radius: 20px; */
+            /* box-shadow: 5px 5px 12px rgb(0, 0, 0);
+            background-color: rgb(114, 89, 55); */
+            color: rgba(255, 255, 255, 0.808);
+            background-color: transparent;
+            align-items: center;
+            height: 20px;
+            justify-items: center;
+
+            padding-left: 10px;
+            padding-right: 10px;
+            transition: 0.8s;
+
+
+        }
+
+        .block:hover {
+            /* background-color: rgba(90, 70, 26, 0.412);
+            text-shadow: 10px 10px 30px grey; */
+            color: rgb(255, 255, 255);
+            
+            transform: scale(1.03);
+        }
+
+        .topbar {
+            /* border-radius: 20px; */
+            /* position: sticky; */
+            top: 0px;
+            /* left: 20px; */
+            /* z-index: 1; */
+            backdrop-filter: blur(9px);
+            width: 100vw;
+            text-align: center;
+
+            background-color: rgba(4, 4, 4, 0.297);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 53px;
+
+
+        }
+
+        .bar1 {
+            position: sticky;
+            z-index: 100;
+
+        }
+
+
+
+
+        .boxes {
+            /* display: flex; */
+
+            
+            text-align: center;
+            justify-items: center;
+            height: 1000px;
+
+        }
+
+        /* .box1 {
+            background-image: url(https://www.chooseyourcareer.in/wp-content/uploads/2022/07/Apple.jpg);
+           
+
+            
+
+        } */
+
+        .company1 {
+            /* font-size: 20px; */
+            text-align: center;
+            height: 430px;
+            width: 50vw;
+            background-color: rgba(85, 85, 85, 0) !important;
+            z-index: 2;
+            position: relative;
+           
+            transition-delay: 50ms;
+            transition: width 0.6s ease-in;
+          
+            z-index: 0;
+        }
+
+        .company2 {
+            /* font-size: 20px; */
+            text-align: center;
+            height: 430px;
+            width: 50vw;
+            background-color: rgba(85, 85, 85, 0) !important;
+            z-index: 2;
+            position: relative;
+           
+            transition-delay: 50ms;
+            transition: width 0.6s ease-in;
+          
+            z-index: 0;
+        }
+
+        .company3 {
+            /* font-size: 20px; */
+            text-align: center;
+            height: 430px;
+            width: 50vw;
+            background-color: rgba(85, 85, 85, 0) !important;
+         
+            position: relative;
+           
+            transition-delay: 50ms;
+            transition: width 0.6s ease-in;
+          
+            z-index: 0;
+        }
+
+        .company4 {
+            /* font-size: 20px; */
+            text-align: center;
+            height: 430px;
+            width: 50vw;
+            background-color: rgba(85, 85, 85, 0) !important;
+           
+            position: relative;
+           
+            transition-delay: 50ms;
+            transition: width 0.6s ease-in;
+           
+            z-index: 0;
+        }
+
+        .company5 {
+            /* font-size: 20px; */
+            text-align: center;
+            height: 430px;
+            width: 50vw;
+            background-color: rgba(85, 85, 85, 0) !important;
+            
+            position: relative;
+           
+            transition-delay: 50ms;
+            transition: width 0.6s ease-in;
+          
+            z-index: 0;
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+        .title2 {
+            font-family: sans-serif;
+            color: whitesmoke;
+            text-align: center;
+            font-weight: lighter;
+            padding-top: 4px;
+            font-size: large;
+        }
+
+        .boxxx {
+
+            border-radius: 17px;
+            border-color: gray;
+            font-family: sans-serif;
+            font-size: 13px;
+            text-align: center;
+            width: 40px;
+            margin: 7px;
+            padding: 3px;
+            color: gray;
+            padding: 10px;
+            align-items: center;
+
+
+
+        }
+
+        .boxxx2 {
+            border: 0.7px solid;
+            color: rgb(49, 152, 220);
+        }
+
+        .boxxx2:hover {
+            /* background-color: rgba(90, 70, 26, 0.412);
+            text-shadow: 10px 10px 30px grey; */
+            background-color: rgb(45, 107, 199);
+            color: rgba(255, 255, 255, 0.827);
+            border: 0.7px solid rgba(255, 255, 255, 0);
+
+            cursor: pointer;
+            transition: 0.7s;
+            transform: scale(1.05);
+        }
+
+
+
+        .boxxx1 {
+            width: 70px;
+            background-color: rgb(45, 107, 199);
+            color: rgba(255, 255, 255, 0.827);
+        }
+
+        .flex {
+            display: flex;
+            justify-content: center;
+            /* Centers items horizontally */
+            align-items: center;
+            /* Centers items vertically */
+            padding-top: 10px;
+        }
+
+
+
+
+        .box2 {
+            /* background-color:black; */
+
+            display: flex;
+            justify-content: center;
+
+            height: 290px;
+           
+
+     
+           
+
+
+        }
+
+        .box11 {
+            width: 90px;
+        }
+
+        .sentence {
+            color: rgba(245, 245, 245, 0.788);
+
+            font-family: "Michroma", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+
+
+            font-size: 10px;
+            background-color: rgb(0, 0, 0);
+
+            text-align: center;
+            width: 100vw;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+
+
+        .allTiles {
+            align-items: center;
+
+            background-color: rgb(48, 45, 42);
+            width: 50vw;
+           
+            height: 410px;
+            transition-delay: 50ms;
+            transition: width 0.6s ease, height 0.7s ease, border-radius 0.1s ease-in-out;
+
+
+            
+
+            background-size: cover;
+            border-radius: 10px;
+            margin-top: 10px;
+            z-index: 20;
+            margin-left: 5px;
+            margin-right: 5px;
+        
+        }
+
+
+
+
+        .allTiles:hover {
+            width: 51vw;
+            height: 450px;
+
+
+        }
+
+
+        .logo img {
+            height: 27px;
+            background-color: transparent;
+            width: 200px;
+
+
+        }
+
+        .logo {
+
+            background-color: transparent;
+            display: flex;
+            width: 20vw;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+
+        .midbar {
+
+            display: flex;
+            background-color: transparent;
+            width: 60vw;
+            justify-content: center;
+            padding: 15px;
+
+        }
+        .rightbar {
+
+            display: flex;
+            background-color: transparent;
+            width: 20vw;
+            justify-content: right;
+            padding: 15px;
+        
+
+        }
+
+
+
+
+
+
+
+        /* .exwidth{
+            width: 70px;
+        }
+        .exwidth2{
+            width: 90px;
+        }
+       
+        .lesswidth{
+            width: 70px;
+        }
+        .lesswidth2{
+            width: 40px;
+        }
+        .exwidth3{
+            width: 120px;
+        }
+        .startupwidth{
+            width: 80px;
+        }
+         */
+        .color {
+            background-color: transparent;
+        }
+
+        .imgsrc img {
+
+            background-color: transparent;
+            height: 15px;
+           margin-right: 10px;
+            padding-top: 1px;
+
+
+        }
+
+
+        .dabba {
+            width: 230px;
+            height: 150px;
+            background-color: rgb(71, 71, 71);
+            margin: 10px;
+margin-top: 10px;
+            border-radius: 10px;
+            background-color: black;
+            transition-delay: 50ms;
+            transition: width 0.6s ease, height 0.7s ease, border-radius 0.1s ease-in-out, margin-top 0.5s ease, backdrop-filter 0.3s ease ,text-align 3s;
+            padding: 17px;
+            font-family: 'Michroma',sans-serif;
+
+z-index: 24;
+
+        }
+
+
+
+        .dabba:hover {
+            width: 550px;
+            height: 200px;
+            border-radius: 20px;
+            margin-top: -130px;
+            backdrop-filter: blur(25px);
+           
+            
+           
+
+        }
+
+        .dabba:hover img {
+
+filter: blur(9px); 
+opacity: 30%;
+
+
+        }
+
+        .dabba img {
+            width: 140px;
+            height: 130px;
+            transition-delay: 50ms;
+            transition: filter 0.6s ease,opacity 1.6s ease;
+        }
+
+
+        .com-name {
+            
+            font-family: "Michroma", sans-serif;
+            
+            padding-left: 28px;
+            font-weight: bolder;
+            text-align: left;
+            color: rgb(185, 185, 185);
+            width: 398px;
+            height: 382px;
+            backdrop-filter: blur(10px);
+            background-color: rgba(0, 0, 0, 0.21);
+            padding-top: 28px;
+            padding-right: 9px;
+          transition: height 0.4s ease;
+           
+
+
+        }
+        .allTiles:hover .com-name {
+    height: 404px;
+}
+
+        .coms{
+            display: flex;
+         
+           
+
+           
+
+        }
+
+
+
+
+        .hover-content {
+position: absolute;
+top: 5%;
+left: 37%; 
+transform:translate(-34%,-6%);
+text-align: center;
+color: white;
+font-family: "Michroma" sans-serif;
+opacity: 0;
+transition: opacity 0.4s cubic-bezier(0.53, 0, 0.24, 0.95);
+background-color: transparent;
+width: 394px;
+height: 215px;
+padding: 7px;
+
+
+
+
+
+
+}
+
+.hover-content .button{
+    margin-left: 120px;
+    margin-right: 120px;
+    width: 160px;
+    font-size: small;
+    color: white;
+}
+
+
+.dabba:hover .hover-content {
+opacity: 1;
+}
+
+
+.button{
+      
+    border-radius: 6px;
+            
+            font-family: 'Michroma';
+            font-size: 17px;
+            text-align: center;
+            width: 250px;
+           
+            color: rgb(206, 206, 206);
+            
+            align-items: center;
+            background-color: rgb(56, 136, 255);
+            padding-bottom: 2px;
+            transition: background-color 0.6s ease
+
+
+}
+.button:hover{
+    background-color: rgb(0, 94, 255);
+}
+
+.button1{
+      
+      border-radius: 6px;
+              
+              font-family: 'Michroma';
+              font-size: 14px;
+              text-align: center;
+              width: 158px;
+             
+              color: rgb(206, 206, 206);
+              
+              align-items: center;
+              background-color: rgb(56, 136, 255);
+              padding-bottom: 2px;
+              transition: background-color 0.6s ease;
+            
+  
+
+  }
+  .button1:hover{
+      background-color: rgb(0, 94, 255);
+  }
+ 
+.signinlogin{
+      
+      border-radius: 6px;
+              
+              font-family: 'Michroma';
+              font-size: 10px;
+              text-align: center;
+              width: 150px;
+             
+              color: rgb(206, 206, 206);
+              
+              align-items: center;
+              background-color: rgb(60, 60, 60);
+              padding-bottom: 2px;
+              transition: background-color 0.6s ease;
+              /* margin: 20px; */
+            
+
+  
+
+  }
+  .signinlogin:hover{
+      background-color: rgb(0, 94, 255);
+  }
+ 
+
+  .comContainer{
+            margin: 0px;
+           
+            height: 442px;
+            overflow: hidden;
+            position: relative;
+            z-index: 20;
+           
+           
+  }
+
+  .tile1{
+            margin-left: 24vw;
+            background-image: url('https://www.pixground.com/wp-content/uploads/2023/06/WWDC-2023-Apple-Logo-4K-Wallpaper-1081x608.jpg');
+            
+        }
+        .tile2{
+            background-image: url(micro.jpg.jpeg);
+         background-size: cover; /* Ensures the image covers the whole background */
+    background-repeat: no-repeat; /* Prevents tiling */
+    background-position: center; /* Centers the image */
+}
+        .tile3{
+            background-image: url("https://4kwallpapers.com/images/wallpapers/google-logo-dark-1920x1080-10998.jpg");
+         background-size: cover; /* Ensures the image covers the whole background */
+    background-repeat: no-repeat; /* Prevents tiling */
+    background-position: center; /* Centers the image */
+}
+        .tile4{
+            background-image: url("https://seekvectors.com/files/download/Amazon-Logo-31.jpg");
+         background-size: cover; /* Ensures the image covers the whole background */
+    background-repeat: no-repeat; /* Prevents tiling */
+    background-position: center; /* Centers the image */
+}
+        .tile5{
+            margin-right: 24vw;
+            background-image: url("https://platform.theverge.com/wp-content/uploads/sites/2/chorus/uploads/chorus_asset/file/23951354/STK043_VRG_Illo_N_Barclay_2_Meta.jpg?quality=90&strip=all&crop=0,0,100,100");
+         background-size: cover; /* Ensures the image covers the whole background */
+    background-repeat: no-repeat; /* Prevents tiling */
+    background-position: center; /* Centers the image */
+
+        }
+        .coms img{
+            width: 60vw;
+            justify-content: center;
+            
+        }
+        .foryou{
+            font-family: "Michroma";
+            font-size: 13px;
+            color: rgb(152, 152, 152);
+            text-align: left;
+            padding-left: 29px;
+            font-weight: bolder;
+        }
+    
+
+        /* .dabba1{
+   background-image: url('https://static.vecteezy.com/system/resources/previews/021/515/140/non_2x/microsoft-software-brand-logo-symbol-with-name-white-design-illustration-with-black-background-free-vector.jpg');
+  
+    } */
+
+
+
+
+
+    </style>
+</head>
+
+<body>
+
+    <div class="topbar bar1">
+        <div class="logo">
+            <img src="Logo.svg" height="29px">
+        </div>
+
+        <div class="midbar">
+
+
+            <div class="block ">
+                HOME
+            </div>
+            <div class="block ">
+                JOBS
+            </div>
+<div class="block ">
+                TEST ARENA
+            </div>
+
+
+            <div class="block ">
+                DASHBOARD
+            </div>
+
+            <div class="block ">
+                MESSAGES
+            </div> 
+            
+            <div class="block ">
+                SUPPORT
+            </div>
+            </div>
+
+
+<div class="rightbar">
+           
+            <div class=" block imgsrc">
+                <img src="icons8-search-50.png">
+            </div>
+                 
+            <div>
+              <div class="signinlogin">Sign In / Log In</div>
+        
+            </div>
+        
+
+</div>
+
+
+
+        </div>
+    </div>
+    <div class="sentence">
+        Find your dream job faster-explore top opportunities, connect with great companies, and take the next big step
+        in your career today!
+    </div>
+
+    <div class="boxes">
+
+        <div class="comContainer">
+            <div class="coms">
+
+                 
+                      <div class="tile1 allTiles">
+           <div class="company1 color">
+                   <div class="com-name">
+                       <h2>Apple Inc.</h2>
+                       <p>Hiring for: iOS Developer Hardware Engineer, Data Analyst</p>
+                       <p>Location: Cupertiono, London</p>
+                       <div class="button1">Apply Now</div>
+                   </div>
+                     
+            
+            </div>
+                      </div>
+
+     
+                      <div class="tile2 allTiles">
+        <div class="company2 color">
+            <div class="com-name">
+            <h2>Microsoft Corporation</h2>
+            <p>Hiring for:Software Engineer, Cloud Solutions Architect, UX Designer</p>
+            <p>LocationRedmond, Dublin, Singapore</p>
+            <div class="button1">Apply Now</div>
+        </div>
+        
+        </div>
+                     </div>
+
+    
+                     <div class="tile3 allTiles">
+    <div class="company3 color">
+        <div class="com-name">
+        <h2>Google (Alphabet Inc.)</h2>
+        <p>Hiring for: Machine Learning Engineer, Android Developer, Data Scientist </p>
+        <p>Location: Mountain View, New York, Zurich</p>
+         <div class="button1">Apply Now</div>
+    </div>
+   
+    </div>
+                     </div>
+    
+     <div class="tile4 allTiles">
+    <div class="company4 color">
+        <div class="com-name">
+        <h2>Amazon.com Inc</h2>
+        <p>Hiring for: Backend Developer, Supply Chain Manager, AI Researcher</p>
+        <p>Location: Seattle, Arlington, Hyderabad</p>
+        <div class="button1">Apply Now</div>
+    </div>
+    
+    </div>
+                       </div>
+    
+                       <div class="tile5 allTiles">
+    <div class="company5 color">
+        <div class="com-name">
+        <h2>Meta Platforms, Inc.</h2>
+        <p>Hiring for:  AR/VR Engineer, Product Manager, Infrastructure Engineer </p>
+        <p>Location: Menlo Park, Austin, London</p>
+        <div class="button1">Apply Now</div>
+    </div>
+    
+    </div>
+                       </div>
+            </div>
+
+    
+      </div>
+
+ 
+
+
+
+
+
+
+
+      <div class="foryou">
+      COMPANIES FOR YOU >
+    </div>
+
+
+        <div class="box2 boxx">
+
+
+
+            <div class="dabba">
+                <img src="https://static.vecteezy.com/system/resources/previews/021/515/140/non_2x/microsoft-software-brand-logo-symbol-with-name-white-design-illustration-with-black-background-free-vector.jpg" alt="Microsoft">
+                <div class="hover-content">
+                    <h3>Microsoft</h3>
+                    <p>Hiring for: Software Engineer, Data Analyst</p>
+                    <p>Location: Remote & On-site</p>
+                    <div class="button">Apply Now</div>
+                </div>
+            </div>
+            
+            <div class="dabba">
+                <img src="Zomato.jpg" alt="Zomato">
+                <div class="hover-content">
+                    <h3>Zomato</h3>
+                    <p>Hiring for: Marketing Executive, UI/UX Designer</p>
+                    <p>Location: Mumbai, Bangalore</p>
+                    <div class="button">Apply Now</div>
+                </div>
+            </div>
+            
+            
+            <div class="dabba">
+                <img src="https://w0.peakpx.com/wallpaper/601/350/HD-wallpaper-spotify-black-white.jpg" alt="Spotify">
+                <div class="hover-content">
+                    <h3>Spotify</h3>
+                    <p>Hiring for: Audio Engineer, Product Manager</p>
+                    <p>Location: Stockholm, New York</p>
+                    <div class="button">Apply Now</div>
+                </div>
+            </div>
+            
+            <div class="dabba">
+                <img src="github.jpg" alt="GitHub">
+                <div class="hover-content">
+                    <h3>GitHub</h3>
+                    <p>Hiring for: DevOps Engineer, Security Engineer</p>
+                    <p>Location: Remote</p>
+                    <div class="button">Apply Now</div>
+                </div>
+            </div>
+
+
+
+            <div class="dabba">
+                <img src="data:image/png;base64,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" alt="Uber">
+                <div class="hover-content">
+                    <h3>Uber</h3>
+                    <p>Hiring for: Backend Developer, Data Scientist</p>
+                    <p>Location: San Francisco, Berlin</p>
+                    <div class="button">Apply Now</div>
+                </div>
+            </div>
+            
+        </div>
+
+
+        
+    </div>
+
+</body>
+<script>
+    let index = 0; // Track the current tile
+    const tiles = document.querySelector('.coms');
+
+    function moveTile() {
+        index++; 
+        if (index === 5) {
+            index = 0; // Reset after last tile
+        }
+        tiles.style.transition = "transform 1s ease-in-out ";
+        tiles.style.transform = `translateX(-${index * 50}vw)`;
+    }
+
+    // Move tile every 8 seconds
+    setInterval(moveTile, 11000);
+
+
+</script>
+
+
+</html>
